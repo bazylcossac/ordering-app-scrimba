@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+#resHeader{
+    width: 100%;
+}
+
+main{
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.mealContainer{
+    display: flex;
+    flex-direction: row;
+    margin:10px 0px;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(245, 242, 242);
+    border-radius: 10px;
+}
+
+.meal-img{
+    font-size:4.2rem;
+    padding:0px 30px 0px 20px;
+    cursor: pointer;
+}
+.mealInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.mealADD{
+    width: 20%;
+    font-size:50px;
+    align-content: center;
+}
+
+.mealADD i {
+    float: right;
+    cursor: pointer;
+}
+
+.meal-price{
+    margin-top:50px;
+    font-size:25px;
+}
+
+#total-price, #order-text{
+    display: none;
+    
+}
+
+#total-price{
+    border-top:1px solid black
+}
+
+#order-text{
+    text-align: center;
+    margin: 30px 0px 50px 0px;
+    font-size:1.5rem
+}
+
+.orderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+
+.order-name{
+   display: flex;
+}
+
+.order-name p {
+    font-size:1.5rem
+}
+
+.order-name #remove-btn {
+    color:lightgray;
+    font-size:.9rem;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    margin-left: 10px;   
+}
+
+.order-name #remove-btn:hover{
+    color:rgb(183, 183, 183)
+}
+
+.order-price{
+    font-size:1.3rem;
+}
+
+.order-price-final{
+    display:flex;
+    flex-direction: column;
+   
+}
+
+#total-sum-order{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#complete-btn-container{
+    margin: 10px auto;
+    
+}
+#complete-btn-container button{
+    background-color: #16DB99;
+    border: none;
+    padding:15px 35px;
+    color:#ffffff;
+    cursor: pointer;
+    font-size:1.2rem
+}
+
+#complete-btn-container button:hover, #cardDetails-form button:hover{
+    background-color: #14bd85;   
+}
+ 
+#order-Payment{
+    visibility:hidden;
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(241, 241, 241);
+    width: 400px;
+    height: 250px;
+    -webkit-box-shadow: 2px 7px 44px -8px rgba(92, 92, 92, 1);  
+    -moz-box-shadow: 2px 7px 44px -8px rgba(92, 92, 92, 1);
+    box-shadow: 2px 7px 44px -8px rgba(92, 92, 92, 1);
+}
+
+#cardDetails-form{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#cardDetails-form input{
+    width: 280px;
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+#cardDetails-form button{
+    margin-top:10px;
+    padding:5px 40px;
+    background-color: #16DB99;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+
