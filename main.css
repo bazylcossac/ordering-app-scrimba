@@ -67,7 +67,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  
+    margin:10px;
 }
 
 .order-name{
@@ -103,10 +103,10 @@ main{
 }
 
 #total-sum-order{
-   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin:10px;
 }
 
 #complete-btn-container{
