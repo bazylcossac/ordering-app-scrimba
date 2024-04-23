@@ -42,7 +42,7 @@ onValue(orderingappDB, function(snapshot){
             const dbRef = ref(getDatabase(app)) /// creating reference to database
             get(child(dbRef, `orderingapp/${e.target.dataset.uuid}`)).then((snapshot) => {   /// sending a request for data
               if (snapshot.exists()) {
-                let newid = Math.floor(Math.random() * 10000000000) /// Yeah, i know it's not the best way to make and unique id but the npm uuid it's no longer free as i know
+                let newid = Math.floor(Math.random() * 10000000000) /// Yeah, i know it's not the best way to make a unique id but the npm uuid it's no longer free as i know
                     let newMeal = {...snapshot.val(), /// creating a copy of snapchot.val() and adding a "unique" id
                                     OrderId: newid /// id
                                   }
