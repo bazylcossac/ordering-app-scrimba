@@ -4,8 +4,7 @@ import {getDatabase, ref, onValue, child, get} from 'https://www.gstatic.com/fir
 import { addToOrder, mealStructure, orderCardDeatails, totalPriceUpdate} from './appFunctions.js'
 
 ///      APP IS PREPARED FOR ADDING MEAL TO DB 
-
-/// import addItemToMenu from './addItemToMenu.js'
+///  addItemToMenu()
 
 /// addItemToMenu(id,name,price,emoji,[ingredients])
 
